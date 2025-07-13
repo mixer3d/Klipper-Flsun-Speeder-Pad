@@ -27,6 +27,7 @@ echo -e "${white}"
 echo -e " ┌──────────────────────────────────────────────────────────────┐"
 title "• SPEEDER PAD INSTALLER •" "${blue}"
 title "Copyright © Cyril Guislain (Guilouz)" "${white}"
+title "mixer3d update" "${blue}"
 echo -e " └──────────────────────────────────────────────────────────────┘"
 
 action "UPDATE PACKAGES LIST" "${yellow}"
@@ -34,7 +35,7 @@ sudo apt update
 echo
 echo -e "${cyan} INFO: Update done!${white}"
 
-action "INSTALL OUTDATED PACKAGES" "${yellow}"
+action "INSTALL UPDATED PACKAGES" "${yellow}"
 sudo apt full-upgrade -y
 echo
 echo -e "${cyan} INFO: Install done!${white}"
@@ -48,10 +49,6 @@ echo -e "${cyan} INFO: Install done!${white}"
 
 action "INSTALLING NEEDED PACKAGES FOR KLIPPERSCREEN" "${yellow}"
 sudo apt install libsystemd-dev -y
-echo
-sudo apt install modemmanager -y
-echo
-sudo apt install dnsmasq-base -y
 echo
 echo -e "${cyan} INFO: Install done!${white}"
 
